@@ -1,0 +1,123 @@
+/* Base styles for the Add Product component */
+.add-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.add-product p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    color: #333;
+}
+
+/* Field styles */
+.addproduct-itemfield {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.addproduct-itemfield p {
+    margin-bottom: 6px;
+}
+
+.addproduct-itemfield input[type="text"],
+.addproduct-itemfield input[type="number"],
+.add-product-selector {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.addproduct-itemfield input:focus,
+.add-product-selector:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Price fields in a row */
+.addproduct-price {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.addproduct-price .addproduct-itemfield {
+    flex: 1;
+    min-width: 140px;
+}
+
+/* File upload */
+.approduct-thumbnail-img {
+    width: 100%;
+    max-width: 150px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.addproduct-itemfield input[type="file"] {
+    display: none;
+}
+
+/* Button styles */
+.addproduct-btn {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.addproduct-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .add-product {
+        padding: 15px;
+    }
+
+    .addproduct-price {
+        flex-direction: column;
+    }
+
+    .addproduct-btn {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-product {
+        border: none;
+        box-shadow: none;
+    }
+
+    .approduct-thumbnail-img {
+        max-width: 100px;
+    }
+
+    .addproduct-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
