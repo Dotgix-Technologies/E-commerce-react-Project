@@ -157,7 +157,6 @@
             |-- product_1730395481820.png
             |-- product_1730478742801.png
 |-- frontend
-    |-- .gitignore
     |-- package-lock.json
     |-- package.json
     |-- public
